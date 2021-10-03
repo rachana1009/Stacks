@@ -46,7 +46,7 @@ void display()
         stack *temp=top;
         while(temp!=NULL)
         {
-        cout<<temp->data<<" ";
+        cout<<temp->data;
         temp=temp->next;
         }
         cout<<endl;
@@ -55,5 +55,17 @@ void display()
 
 int main()
 {
-    cout<<"Enter the "
+    // string s;
+    // cout<<"Enter the word:";
+    // cin>>s;
+    init();
+    push('c');
+    push('u');
+    push('t');
+    push('e');
+    // for(int i=0;i<'\0';i++)
+    // {
+    //   push(s[i]);
+    // }
+    display();
 }
