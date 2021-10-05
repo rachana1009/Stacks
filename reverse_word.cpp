@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 
 class stack
@@ -55,17 +56,13 @@ void display()
 
 int main()
 {
-    // string s;
-    // cout<<"Enter the word:";
-    // cin>>s;
+    string s;
+    cout<<"Enter the word:";
+    cin>>s;
     init();
-    push('c');
-    push('u');
-    push('t');
-    push('e');
-    // for(int i=0;i<'\0';i++)
-    // {
-    //   push(s[i]);
-    // }
+    for(int i=0;i<s.size();i++)
+    {
+      push(s[i]);
+    }
     display();
 }
